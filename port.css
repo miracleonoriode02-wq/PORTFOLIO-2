@@ -786,7 +786,7 @@ span{
     margin: 2px 65% 0 0;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 360px) {
     .navdiv{
         width: 100%;
     }
