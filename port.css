@@ -467,7 +467,7 @@ form{
 }
 form input{
     height: 100px;
-    width: 620px;
+    width: 665px;
     border-radius: 10px;
     background-color: #111827;
     font-size: 15px;
@@ -544,18 +544,23 @@ span{
   .navbar{
     margin-bottom: 5px;
     width: 100%;
+    height: auto;
     border: 3px solid #111827;
     border-radius: 10px;
   }
+  .navdiv{
+    display: block;
+  }
   .logo, .logo span{
-    font-size: larger;
     margin-left: auto;
+    width: 100%;
+    font-size: 24px;
   }
   .navdiv ul{
-    margin-left: 10px;
+    margin: 10px 0;
     gap: 20px;
-  }
-  .navbar{
+    font-weight: 300;
+    display: flex;
     width: 100%;
   }
   .section-2{
@@ -780,4 +785,78 @@ span{
     width: 30%;
     margin: 2px 65% 0 0;
   }
+}
+@media (max-width: 390px) {
+    .navdiv{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        font-size: small;
+    }
+    .section-2{
+        width: 100%;
+    }
+    .pic{
+        width: 280px;
+    }
+    .sub-hero h3,
+    .full-stack,
+    .sub-hero p{
+        font-size: 16px;
+    }
+    .btn-row button{
+        width: 45%;
+        height: 45px;
+    }
+    .con-icon i{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .about-text br{
+        display: none;
+    }
+    .about-text i{
+        font-size: 30px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-info,
+    .sub-info-2{
+        margin-top: -10px;
+    }
+    .cards br,
+    .connect br{
+        display: none;
+    }
+    .cards h3{
+        font-size: 25px;
+    }
+    .cards button{
+        width: 45%;
+    }
+    .section-6{
+        display: block;
+        padding: 20px 0;
+    }
+    .contact-info{
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        border: 2px solid #111827;
+    }
+    .connect span{
+        font-size: 26px;
+        font-weight: 500;
+        background: linear-gradient(90deg, #7C3AED, #A855F7);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
